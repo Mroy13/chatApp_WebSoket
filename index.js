@@ -22,7 +22,7 @@ io.on('connection', (socket) => {
      socket.on('join_room',(data)=>{
          socket.join(data.roomid);
          console.log(data.roomid);
-       // console.log(data.user);
+       //console.log(data.user);
       // console.log(io.sockets.adapter);
        const soketInroom = io.sockets.adapter.rooms.get(data.roomid);
        console.log(soketInroom);
